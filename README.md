@@ -59,8 +59,10 @@ echo "deb [signed-by=/usr/share/keyrings/trivy.gpg] https://aquasecurity.github.
 sudo apt-get update
 sudo apt-get install trivy
 ```
-
-
+# **Install SonarQube:**
+```
+docker run -d --name sonar -p 9000:9000 sonarqube:lts-community
+```
 # **Install Docker Scout:**
 ```
 docker login       `Give Dockerhub credentials here`
